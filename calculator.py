@@ -43,13 +43,10 @@ def click(event):
         screen.update()
         
 
-
 root = Tk()
 blank_space = ' '
 root.title(65*blank_space + 'Calculator')
 root.resizable(width=False, height=False)
-
-screen_value = StringVar()
 
 frame = Frame(root, bd=20, pady=3, relief=RIDGE, bg='#00BFFF')
 frame.grid()
@@ -59,9 +56,6 @@ frame2.grid()
 
 MainFrame = Frame(frame2, bd=7, pady=3, relief=RIDGE, bg='#00BFFF')
 MainFrame.grid()
-
-
-
 
 screen_value = StringVar()
 screen_value.set("")
