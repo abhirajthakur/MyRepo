@@ -62,7 +62,7 @@ MainFrame.grid()
 
 screen_value = StringVar()
 screen_value.set("")
-screen = Entry(MainFrame, textvar=screen_value, font=('arial', 25, BOLD), fg='white', bd=12, bg='#00cdcd', justify=RIGHT)
+screen = Entry(MainFrame, textvar=screen_value, font=('arial', 27, BOLD), fg='white', bd=12, bg='#00cdcd', justify=RIGHT)
 screen.grid(row=0, column=0, columnspan=4)
 
 numberpad = '789456123'
