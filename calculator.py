@@ -3,7 +3,6 @@ from tkinter import *
 from tkinter.font import BOLD
 
 
-
 def click(event):
     global screen_value
     text = event.widget.cget('text')
