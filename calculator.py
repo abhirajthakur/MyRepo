@@ -15,7 +15,6 @@ def click(event):
                 value = eval(screen_value.get())
             except Exception as e:
                 value = "Error"
-
         screen_value.set(value)
         screen.update()
     elif text == 'x':
@@ -34,7 +33,11 @@ def click(event):
         screen_value.set(-eval(screen_value.get()))
         screen.update()
     elif text == '√':
-        screen_value.set(sqrt(eval(screen_value.get())))
+        square_root = sqrt(eval(screen_value.get()))
+        if square_root%1 == 0:
+            screen_value.set('%d' %(square_root))
+        else:
+            screen_value.set('%.11f' %(square_root))
         screen.update()
     else:
         screen_value.set(screen_value.get()+text)
@@ -63,7 +66,7 @@ MainFrame.grid()
 
 screen_value = StringVar()
 screen_value.set("")
-screen = Entry(MainFrame, width=14,textvar=screen_value, font=('arial', 35, BOLD), fg='white', bd=6, bg='#00BFFF', justify=RIGHT)
+screen = Entry(MainFrame, width=14,textvar=screen_value, font=('arial', 35, BOLD), fg='white', bd=12, bg='#00BFFF', justify=RIGHT)
 screen.grid(row=0, column=0, columnspan=5, ipady=8)
 
 numberpad = '789456123'
