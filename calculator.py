@@ -117,7 +117,7 @@ equals.grid(row=6, column=3)
 equals.bind("<Button-1>", click)
 
 
-root.mainloop()
+# root.mainloop()
 
 
 # ÷
