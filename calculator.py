@@ -10,10 +10,7 @@ def click(event):
         if screen_value.get().isdigit():
             value = int(screen_value.get())
         else:
-            try:
-                value = eval(screen_value.get())
-            except Exception as e:
-                value = "Error"
+            value = eval(screen_value.get())
         screen_value.set(value)
         screen.update()
     elif text == 'x':
