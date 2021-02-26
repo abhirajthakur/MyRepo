@@ -64,52 +64,52 @@ i = 0
 btn = []
 for j in range(3, 6):
     for k in range(3):
-        btn.append(Button(MainFrame, fg='white', bg='#00BFFF',width=3, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text=numberpad[i]))
+        btn.append(Button(MainFrame, fg='white', bg='#00BFFF',width=3, relief=GROOVE, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text=numberpad[i]))
         btn[i].grid(row=j, column=k)
         btn[i].bind("<Button-1>", click)
         i+=1
 
-clear_all = Button(MainFrame, fg='white', bg='#00BFFF',width=3, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='C')
+clear_all = Button(MainFrame, fg='white', bg='#00BFFF',width=3, relief=GROOVE, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='C')
 clear_all.grid(row=2, column=0)
 clear_all.bind("<Button-1>", click)
 
-backspace = Button(MainFrame, fg='white', bg='#00BFFF',width=3, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='⌫')
+backspace = Button(MainFrame, fg='white', bg='#00BFFF',width=3, relief=GROOVE, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='⌫')
 backspace.grid(row=2, column=1)
 backspace.bind("<Button-1>", click)
 
-plus_minus = Button(MainFrame, fg='white', bg='#00BFFF',width=3, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='±')
+plus_minus = Button(MainFrame, fg='white', bg='#00BFFF',width=3, relief=GROOVE, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='±')
 plus_minus.grid(row=2, column=2)
 plus_minus.bind("<Button-1>", click)
 
-divide = Button(MainFrame, fg='white', bg='#00BFFF',width=3, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='÷')
+divide = Button(MainFrame, fg='white', bg='#00BFFF',width=3, relief=GROOVE, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='÷')
 divide.grid(row=2, column=3)
 divide.bind("<Button-1>", click)
 
-multiply = Button(MainFrame, fg='white', bg='#00BFFF',width=3, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='x')
+multiply = Button(MainFrame, fg='white', bg='#00BFFF',width=3, relief=GROOVE, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='x')
 multiply.grid(row=3, column=3)
 multiply.bind("<Button-1>", click)
 
-minus = Button(MainFrame, fg='white', bg='#00BFFF',width=3, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='-')
+minus = Button(MainFrame, fg='white', bg='#00BFFF',width=3, relief=GROOVE, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='-')
 minus.grid(row=4, column=3)
 minus.bind("<Button-1>", click)
 
-plus = Button(MainFrame, fg='white', bg='#00BFFF',width=3, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='+')
+plus = Button(MainFrame, fg='white', bg='#00BFFF',width=3, relief=GROOVE, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='+')
 plus.grid(row=5, column=3)
 plus.bind("<Button-1>", click)
 
-square_root = Button(MainFrame, fg='white', bg='#00BFFF',width=3, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='√')
+square_root = Button(MainFrame, fg='white', bg='#00BFFF',width=3, relief=GROOVE, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='√')
 square_root.grid(row=6, column=0)
 square_root.bind("<Button-1>", click)
 
-zero = Button(MainFrame, fg='white', bg='#00BFFF',width=3, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='0')
+zero = Button(MainFrame, fg='white', bg='#00BFFF',width=3, relief=GROOVE, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='0')
 zero.grid(row=6, column=1)
 zero.bind("<Button-1>", click)
 
-point = Button(MainFrame, fg='white', bg='#00BFFF',width=3, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='.')
+point = Button(MainFrame, fg='white', bg='#00BFFF',width=3, relief=GROOVE, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='.')
 point.grid(row=6, column=2)
 point.bind("<Button-1>", click)
 
-equals = Button(MainFrame, fg='white', bg='#00BFFF',width=3, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='=')
+equals = Button(MainFrame, fg='white', bg='#00BFFF',width=3, relief=GROOVE, height=2, font=('arial', 19, BOLD), padx=17, bd=7, text='=')
 equals.grid(row=6, column=3)
 equals.bind("<Button-1>", click)
 
