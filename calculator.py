@@ -20,8 +20,10 @@ def click(event):
         screen_value.set("")
         screen.update()
     elif text == '⌫':
+        screen.configure(state='normal')
         screen.delete(len(screen_value.get())-1, END)
         screen.update()
+        screen.configure(state='disabled')
     elif text == '÷':
         screen_value.set(screen_value.get()+'/')
         screen.update()
@@ -56,7 +58,8 @@ MainFrame.grid()
 
 screen_value = StringVar()
 screen_value.set("")
-screen = Entry(MainFrame, width=14,textvar=screen_value, font=('arial', 35, BOLD), fg='white', bd=12, bg='#00BFFF', justify=RIGHT)
+screen = Entry(MainFrame, width=14,textvar=screen_value, font=('arial', 35, BOLD), fg='white', bd=12, bg='#00BFFF', justify=RIGHT, state='disabled')
+screen.configure({"disabledbackground": "#00BFFF", "disabledforeground": "white"})
 screen.grid(row=0, column=0, columnspan=5, ipady=7)
 
 numberpad = '789456123'
